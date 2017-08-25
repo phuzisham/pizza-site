@@ -4,7 +4,7 @@
 
 #### By _**David Hale**_
 
-#### GH-Pages _https://phuzisham.github.io/fizz-pong/_
+#### GH-Pages _https://phuzisham.github.io/pizza-site/_
 
 ## Description
 
