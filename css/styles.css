@@ -26,9 +26,30 @@ h1 em {
   font-family: pizza-hut;
 }
 
+#pizzaPic {
+  //text-align: center;
+}
+
+#pizzaPic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+  width: 90%;
+  border-radius: 20px;
+}
+
 button {
   background-color: #F3AD50;
   color: color: #EFF1ED;
+}
+
+.space {
+  height: 10px;
+  width: 120vw;
+  margin-left: -200px;
+  margin-top: 50px;
+  background-color: #7F8D33;
 }
 
 #pizzas {
@@ -37,8 +58,7 @@ button {
 
 #show-pizza {
   display: none;
-  margin-bottom: 80px;
-  margin-top: -40px;
+  margin-bottom: 100px;
 }
 
 .pizza {

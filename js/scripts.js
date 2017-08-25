@@ -1,8 +1,9 @@
-function Pizza(name, pizza, size, price, age) {
+function Pizza(name, pizza, size, price, toppings) {
   this.name = name;
   this.pizza = pizza;
   this.size = size;
   this.price = price;
+  this.toppings = toppings;
 }
 Pizza.prototype.finalPrice = function() {
   return this.price;
