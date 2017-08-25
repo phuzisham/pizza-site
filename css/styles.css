@@ -1,0 +1,51 @@
+@font-face {font-family: pizza; src: url('hot-pizza.ttf');
+            font-family: pizza-hut; src: url('pizzahut-font.ttf');}
+
+body {
+  font-family: pizza;
+  background-color: #503C28;
+  color: #EFF1ED;
+}
+
+.jumbotron {
+  background-image: url(../img/pizza.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+h1 {
+  margin-left: 0px;
+  margin-top: 0px;
+  color: #F3AD50;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+h1 em {
+  font-family: pizza-hut;
+}
+
+button {
+  background-color: #F3AD50;
+  color: color: #EFF1ED;
+}
+
+#pizzas {
+  display: none;
+}
+
+#show-pizza {
+  display: none;
+  margin-bottom: 80px;
+  margin-top: -40px;
+}
+
+.pizza {
+  cursor: pointer;
+  color: #ffcd19;
+}
+
+.pizza:hover {
+  text-decoration: underline;
+}

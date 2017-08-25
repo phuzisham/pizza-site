@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Site</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+
+    </div>
+    <div class="container">
+      <h1>Get a <em>Pizza_ </em> the pie!!!</h1>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="pizza-form">
+            <div class="form-group">
+              <label for="name">Name for order: </label>
+              <input class="form-control" id="name"/>
+            </div>
+            <div class="form-group">
+              <label for="select-pizza">Pizza's: </label>
+              <select class="form-control" id="select-pizza">
+                <option>Select Pizza</option>
+                <option value="0">Cheese</option>
+                <option value="1">Pepperoni</option>
+                <option value="2">Combination</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="select-size">Sizes: </label>
+              <select class="form-control" id="select-size">
+                <option>Select Sizes</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div id="pizzas" class="col-lg-6">
+          <h2>Reserved Pizzas: </h2>
+          <ul id="pizza-names">
+
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div id="show-pizza">
+            <h2></h2>
+            <p>
+              Pizza: <span class="pizza-name"></span>
+            </p>
+            <p>
+              Size: <span class="pizza-size"></span>
+            </p>
+            <p>
+              Price: <span class="pizza-price"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
