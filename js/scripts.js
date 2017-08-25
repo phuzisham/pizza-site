@@ -28,22 +28,20 @@ $(document).ready(function() {
     }
   });
 
+  var pizzaToppings = 0;
+  function calculateToppings(){
+    $("input[type=checkbox]:checked").each(function(){
+      pizzaToppings += parseInt($(this).val());
+    });
+  }
+
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
-
-    var pizzaToppings = 0;
-    function calculateToppings(){
-      $("input[type=checkbox]:checked").each(function(){
-        pizzaToppings += parseInt($(this).val());
-      });
-    }
-    calculateToppings();
-
     var name = $("#name").val();
     var pizzaName = pizzas[$("#select-pizza").val()].name;
     var pizzaSize = $("#select-size option:selected").text();
     var pizzaPrice = $("#select-size").val();
-
+    calculateToppings();
     var newPizza = new Pizza(name, pizzaName, pizzaSize, pizzaPrice, pizzaToppings);
 
     $('ul#pizza-names').append('<li><span class="pizza">' + newPizza.name + '</span></li>');

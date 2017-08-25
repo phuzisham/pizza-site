@@ -49,6 +49,14 @@ button {
   margin-top: 5px;
 }
 
+.space ul {
+  list-style-type: none;
+}
+
+.space .row {
+  margin: auto;
+}
+
 #pizzas {
   display: none;
 }
