@@ -6,7 +6,7 @@ function Pizza(name, pizza, size, price, toppings) {
   this.toppings = toppings;
 }
 Pizza.prototype.finalPrice = function() {
-  return this.price;
+  return parseFloat(this.price) + parseInt(this.toppings);
 };
 
 var cheese = {name: "Cheese", sizes: [{size: "Medium", price: 9.99}, {size: "Large", price: 11.99}, {size: "Extra Large", price: 14.99}]};
@@ -31,12 +31,20 @@ $(document).ready(function() {
   $("form#pizza-form").submit(function(event){
     event.preventDefault();
 
+    var pizzaToppings = 0;
+    function calculateToppings(){
+      $("input[type=checkbox]:checked").each(function(){
+        pizzaToppings += parseInt($(this).val());
+      });
+    }
+    calculateToppings();
+
     var name = $("#name").val();
     var pizzaName = pizzas[$("#select-pizza").val()].name;
     var pizzaSize = $("#select-size option:selected").text();
     var pizzaPrice = $("#select-size").val();
 
-    var newPizza = new Pizza(name, pizzaName, pizzaSize, pizzaPrice);
+    var newPizza = new Pizza(name, pizzaName, pizzaSize, pizzaPrice, pizzaToppings);
 
     $('ul#pizza-names').append('<li><span class="pizza">' + newPizza.name + '</span></li>');
 
@@ -47,7 +55,7 @@ $(document).ready(function() {
       $("#show-pizza h2").text(newPizza.name);
       $(".pizza-name").text(newPizza.pizza);
       $(".pizza-size").text(newPizza.size);
-      $(".pizza-price").text(newPizza.price);
+      $(".pizza-price").text('$' + newPizza.finalPrice());
     });
   });
 });
