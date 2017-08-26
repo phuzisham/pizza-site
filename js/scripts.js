@@ -57,7 +57,6 @@ $(document).ready(function() {
       $(".pizza-price").text('$' + newPizza.finalPrice());
 
       if (newPizza.toppings > 0) {
-        alert('top');
         $("#toppingsList").show();
         $(".toppings-price").text(newPizza.toppings);
       }
