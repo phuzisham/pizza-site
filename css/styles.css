@@ -1,5 +1,9 @@
-@font-face {font-family: pizza; src: url('hot-pizza.ttf');
-            font-family: pizza-hut; src: url('pizzahut-font.ttf');}
+@font-face {
+  font-family: pizza;
+  src: url('hot-pizza.ttf');
+  font-family: pizza-hut;
+  src: url('pizzahut-font.ttf');
+}
 
 body {
   font-family: pizza;
