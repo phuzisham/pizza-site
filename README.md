@@ -12,17 +12,22 @@ _The user can choose one or more individual toppings and a size to order a pizza
 
 #### Specifications
 
--Users final price is totaled based on type, size, and number of extra toppings.-
+-Final price is totaled based on type, size, and number of extra toppings.-
 
-* Medium Cheese Pizza
+* Input: Medium Cheese Pizza
   * Extra Toppings: 0
-  * Final Price: 9.99
-* Large Pepperoni Pizza
+
+* Output: $9.99
+
+* Input: Large Pepperoni Pizza
   * Extra Toppings: 3
-  * Final Price: 15.99
-* Extra Large Combination Pizza
-  * Extra Toppings: 1
-  * Final Price: 18.99
+
+* Output: 15.99
+
+* Input: Extra Large Combination Pizza
+  * Extra Toppings:
+  
+* Output: 18.99
 
 
 #### To Run Locally
