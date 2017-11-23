@@ -1,14 +1,17 @@
-# _Pizza-Site_
+# _Pizza Site_
 
-#### _A website for a pizza company., {08/25/2017}_
+#### _Created: 08.25.2017_
+#### _Last Modified: 11.23.2017_
 
 #### By _**David Hale**_
 
-#### GH-Pages _https://phuzisham.github.io/pizza-site/_
+#### _GH-Pages [here](https://phuzisham.github.io/pizza-site/)_
 
 ## Description
 
 _The user can choose one or more individual toppings and a size to order a pizza and see the final cost. They can also order multiple pizzas which are displayed in a list._
+
+![Screenshot](https://github.com/phuzisham/pizza-site/blob/master/img/cap.png "Screen Capture")
 
 #### Specifications
 
@@ -32,10 +35,10 @@ _HTML, CSS, Javascript, jQuery, and Bootstrap_
 
 ## Support and contact details
 
-_{email: david.hale7@gmail.com}_
+_email: david.hale7@gmail.com_
 
 ### License
 
 *This website is licensed under the MIT License*
 
-MIT license 2016 **_{David Hale}_**
+MIT license 2017 **_{David Hale}_**
